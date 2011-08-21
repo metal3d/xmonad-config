@@ -1,0 +1,1 @@
+/home/patachou/.xmonad/xmonad.hs
