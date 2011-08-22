@@ -18,7 +18,7 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 -- My Layouts...
-myLayouts =  Full ||| Tall 1 0.03 0.5  ||| GridRatio (4/3) ||| GridRatio (2/3) 
+myLayouts =  Tall 1 0.03 0.5  ||| Full ||| GridRatio (4/3) ||| GridRatio (2/3) 
 
 
 -- my startup
