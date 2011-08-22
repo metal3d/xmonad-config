@@ -41,3 +41,6 @@ mkdir -p ~/bin
 cp bin/* ~/bin/
 chmod -R ug+x ~/bin/xmonad-startup
 
+#cleanup
+cd 
+rm -rf /tmp/xmonad-config
