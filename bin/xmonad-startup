@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#prevent running commands on xmonad restart
+#I choose xscreensaver because it is stopped at xmonad shutdown
+[ "$(ps --noheader -C xscreensaver -o pid)" ] && exit 0
+
+###commands to lauch
+#screensaver 
+xscreensaver &
+
+#new background
+feh --bg-fill ~/Images/backgrounds/OTHER-Tuxsta_1600x1200.png
+
+#used to force the edge of my mouse pad to scroll
+synclient VertTwoFingerScroll=0 VertEdgeScroll=1
+
+#launch pulseaudio and a notification daemon that will show you popup on
+#system notification
+pulseaudio --start
+/usr/libexec/notification-daemon &
