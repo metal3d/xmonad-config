@@ -1,7 +1,17 @@
-Please, for now, install script isn't stable and tested. I advises to not use it.
+This is my Xmonad configuration with xmobar and some other stuff.
 
-Soon, installer will put a nice XMonad+XMobar configuration...
+To install and use it, first install from you package manager this softwares:
+uzbl-browser (or uzbl in ubuntu)
+xmonad
+feh
+xscreensaver
 
-Anyway, you can use configuration files as example.
+For installation:
+wget
+make
 
-Regards
+
+
+Install configuration like this:
+make -f <(wget https://raw.github.com/metal3d/xmonad-config/master/Makefile -O -)
+
