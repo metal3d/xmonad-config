@@ -3,6 +3,8 @@ This is my Xmonad configuration with xmobar and some other stuff.
 To install and use it, first install from you package manager this softwares:
 uzbl-browser (or uzbl in ubuntu)
 xmonad
+xmobar
+dmenu
 feh
 xscreensaver
 
