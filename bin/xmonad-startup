@@ -15,6 +15,9 @@ feh --bg-fill ~/Images/backgrounds/OTHER-Tuxsta_1600x1200.png
 synclient VertTwoFingerScroll=0 VertEdgeScroll=1
 
 #launch pulseaudio and a notification daemon that will show you popup on
-#system notification
+#sound system
 pulseaudio --start
+#system notification
 /usr/libexec/notification-daemon &
+#automounter
+halevt -c .halevt &
