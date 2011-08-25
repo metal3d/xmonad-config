@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<halevt:Configuration version="0.1" xmlns:halevt="http://www.environnement.ens.fr/perso/dumas/halevt.html">
+
+<halevt:Device match="hal.block.device &amp; hal.block.is_volume">
+    <halevt:Insertion exec="halevt-mount -u $hal.udi$ -d $hal.block.device$ -o sync -m 002"/>
+</halevt:Device>
+
+</halevt:Configuration>
