@@ -27,8 +27,10 @@ install-tools:
 	cp /tmp/xmonad-config/bin/xmonad-startup ~/bin/xmonad-startup
 	chmod ug+x ~/bin/xmonad-startup
 
+install_mutt:
+	$(shell test -f ~/.mailcap && mv ~/.mailcap ~/.mailcap.$(DATE))
+	cp /tmp/xmonad-config/mailcap ~/.mailcap
+
 clean:
 	rm -rf /tmp/xmonad-config
-
-
 
