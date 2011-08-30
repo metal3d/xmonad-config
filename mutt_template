@@ -1,0 +1,44 @@
+# Local configuration for Mutt.
+set hostname=gmail.com
+my_hdr From: FIRSTNAME NAME <USERNAME@gmail.com>
+set use_envelope_from
+set envelope_from_address="USERNAME@gmail.com"
+
+unignore Date Message-ID In-Reply-To
+
+set move=no
+set spoolfile=imaps://imap.gmail.com:993/INBOX
+set imap_user = "USERNAME@gmail.com"
+set imap_pass= "YOUR_PASSWORD"
+set imap_authenticators="login"
+set imap_passive="no"
+set folder="imaps://imap.gmail.com:993"
+set imap_check_subscribed="yes"
+set imap_list_subscribed="yes"
+
+set record="+[Gmail]/Messages envoyés"
+set postponed="+[Gmail]/Brouillons"
+
+set smtp_url="smtps://metal3d:YOUR_PASSWORD@smtp.gmail.com:465"
+set ssl_starttls="yes"
+
+set locale="fr_FR"
+set date_format="%A %d %b %Y à %H:%M:%S (%Z)"
+set attribution="Le %d, %n à écrit:"
+set forward_format="[Fwd: %s]"
+set forward_quote
+
+mailboxes !
+
+set pager_index_lines="7"
+set pager_stop
+
+
+set message_cachedir="~/.mutt_msg_cache"
+set header_cache="~/.mutt_header_cache"
+auto_view text/html
+
+
+set query_command="goobook query '%s'"
+bind editor <Tab> complete-query
+macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
