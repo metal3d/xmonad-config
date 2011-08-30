@@ -2,8 +2,6 @@
 
 MUTTRC=~/.muttrc
 
-
-
 echo "Will configure mutt"
 echo -n "Your gmail username without @gmail.com: "
 read username
@@ -14,7 +12,7 @@ read firstname
 echo -n "Your lastname: "
 read lastname
 
-echo -n "You password (leav is blank to let mutt ask your password on startup): "
+echo -n "You password (leave it blank to let mutt asking your password on startup): "
 read password
 
 #create muttrc
