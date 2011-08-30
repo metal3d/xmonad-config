@@ -1,6 +1,6 @@
 # Local configuration for Mutt.
 set hostname=gmail.com
-my_hdr From: FIRSTNAME NAME <USERNAME@gmail.com>
+my_hdr From: FIRSTNAME LASTNAME <USERNAME@gmail.com>
 set use_envelope_from
 set envelope_from_address="USERNAME@gmail.com"
 

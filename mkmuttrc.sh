@@ -22,9 +22,9 @@ cp mutt_template $MUTTRC
 
 #change config
 sed -i "s/FIRSTNAME/$firstname/g" $MUTTRC
-sed -i "s/LASTNAME/$firstname/g"  $MUTTRC
-sed -i "s/USERNAME/$firstname/g"  $MUTTRC
-sed -i "s/PASSWORD/$firstname/g"  $MUTTRC
+sed -i "s/LASTNAME/$lastnam/g"  $MUTTRC
+sed -i "s/USERNAME/$username/g"  $MUTTRC
+[[ ! -z $password ]] && sed -i "s/PASSWORD/$pasword/g"  $MUTTRC
 
 echo "done"
 
