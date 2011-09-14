@@ -1,3 +1,6 @@
+" Metal3d config, some values was created by mkvimrc from gvim - even if I use
+" vim on terminal
+
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -7,7 +10,7 @@ nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>")
 let &cpo=s:cpo_save
 unlet s:cpo_save
 
-"Indentation
+" Default Indentation - ftplugins can reset this values
 set autoindent
 set smartindent
 set tabstop=4
@@ -37,13 +40,17 @@ set number
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
 
+" TagList on righ, because I use NERDTree on the left
 let Tlist_Auto_Open=1
 let Tlist_Use_Right_Window=1
 let Tlist_Show_One_File=1
 
-"theme
+" I've got a azerty keybord, <Leader> was set to "\" that's not nice on that
+" kind of keyboard. So i remap this to ","
+let mapleader=","
+
+" theme
 set background=dark
 colorscheme slate
 " vim: set ft=vim :
