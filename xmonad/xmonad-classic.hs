@@ -20,6 +20,10 @@ toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 -- My Layouts...
 myLayouts =  Tall 1 0.03 0.5  ||| Full ||| GridRatio (4/3) ||| GridRatio (2/3) 
 
+-- Change modmask to Super
+-- I set it because weechat make a large usage
+-- of ALT key...
+myModMask = mod4Mask
 
 -- my startup
 myStartup :: X ()
@@ -33,5 +37,6 @@ myConfig = azertyConfig {
     , logHook = dynamicLog
     , startupHook = myStartup
     , layoutHook = myLayouts
+    , modMask    = myModMask
  }
 
